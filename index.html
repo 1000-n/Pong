@@ -24,7 +24,9 @@
     <div>
         <div id="div-englob">
             <div id= "option-btn-div">
-                <button onclick="ouvrirMiniPage()" class="option-btn"><span class="fa-solid fa-gear"></span></button>
+                <button onclick="ouvrirMiniPage()" class="option-btn" type="button" aria-label="Déplacer vers la droite">
+                    <span class="fa-solid fa-gear" aria-hidden="true"></span>
+                </button>
                     <div id="option" class="overlay">
                         <div class="contenu">
                             <h1>Options</h1>
@@ -73,8 +75,12 @@
             <p id="highscore">Meilleur score : 0 s</p>
         </div>
         <div class="boutons_direct">
-            <button id="gauche" class="fleche-dir"><span class="fa-classic fa-arrow-left"></span></button>
-            <button id="droite" class="fleche-dir"><span class="fa-classic fa-arrow-right"></span></button>
+            <button id="gauche" class="fleche-dir" type="button" aria-label="Déplacer vers la gauche">
+                <span class="fa-classic fa-arrow-left" aria-hidden="true"></span>
+            </button>
+            <button id="droite" class="fleche-dir" type="button" aria-label="Déplacer vers la droite">
+                <span class="fa-classic fa-arrow-right" aria-hidden="true"></span>
+            </button>
         </div>
     </div>
 
@@ -84,7 +90,7 @@
 
     <footer>
         <p><span class="fa-brands fa-github"></span>Projet à deux - JavaScript</p>
-        <div class="credit">
+        <div class = "credit">
             <p class = "credit">Pellerin Milène</p>
             <p class = "credit">-</p>
             <p class = "credit">Golliot Camille</p>
